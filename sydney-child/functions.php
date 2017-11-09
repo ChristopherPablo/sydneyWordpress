@@ -1,5 +1,5 @@
-<?php
-function my_theme_enqueue_styles() {
+﻿<?php
+function excen_enqueue_styles() {
 
     $parent_style = 'sydney-style'; // This is 'Sydney-style' for the Sydney theme.
 
@@ -10,7 +10,7 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'excen_enqueue_styles' );
 
 ?>
 
@@ -28,25 +28,25 @@ add_action( 'init', 'codex_publicacoes_init' );
  */
 function codex_publicacoes_init() {
     $labels = array(
-        'name'               => _x( 'Publicações', 'post type general name', 'your-plugin-textdomain' ),
-        'singular_name'      => _x( 'publicação', 'post type singular name', 'your-plugin-textdomain' ),
-        'menu_name'          => _x( 'Publicações', 'admin menu', 'your-plugin-textdomain' ),
-        'name_admin_bar'     => _x( 'Publicações', 'add new on admin bar', 'your-plugin-textdomain' ),
-        'add_new'            => _x( 'Add New', 'Publicações', 'your-plugin-textdomain' ),
-        'add_new_item'       => __( 'Add New Publicações', 'your-plugin-textdomain' ),
-        'new_item'           => __( 'New Publicação', 'your-plugin-textdomain' ),
-        'edit_item'          => __( 'Edit Publicação', 'your-plugin-textdomain' ),
-        'view_item'          => __( 'View Publicação', 'your-plugin-textdomain' ),
-        'all_items'          => __( 'All Publicações', 'your-plugin-textdomain' ),
-        'search_items'       => __( 'Search Publicações', 'your-plugin-textdomain' ),
-        'parent_item_colon'  => __( 'Parent Publicações:', 'your-plugin-textdomain' ),
-        'not_found'          => __( 'No Publicações found.', 'your-plugin-textdomain' ),
-        'not_found_in_trash' => __( 'No Publicações found in Trash.', 'your-plugin-textdomain' )
+        'name'               => _x( 'Publicações', 'post type general name', 'excen-theme' ),
+        'singular_name'      => _x( 'publicação', 'post type singular name', 'excen-theme' ),
+        'menu_name'          => _x( 'Publicações', 'admin menu', 'excen-theme' ),
+        'name_admin_bar'     => _x( 'Publicações', 'add new on admin bar', 'excen-theme' ),
+        'add_new'            => _x( 'Add New', 'Publicações', 'excen-theme' ),
+        'add_new_item'       => __( 'Add New Publicações', 'excen-theme' ),
+        'new_item'           => __( 'New Publicação', 'excen-theme' ),
+        'edit_item'          => __( 'Edit Publicação', 'excen-theme' ),
+        'view_item'          => __( 'View Publicação', 'excen-theme' ),
+        'all_items'          => __( 'All Publicações', 'excen-theme' ),
+        'search_items'       => __( 'Search Publicações', 'excen-theme' ),
+        'parent_item_colon'  => __( 'Parent Publicações:', 'excen-theme' ),
+        'not_found'          => __( 'No Publicações found.', 'excen-theme' ),
+        'not_found_in_trash' => __( 'No Publicações found in Trash.', 'excen-theme' )
     );
 
     $args = array(
         'labels'             => $labels,
-                'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+                'description'        => __( 'Description.', 'excen-theme' ),
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
